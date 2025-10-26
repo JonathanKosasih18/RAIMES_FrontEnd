@@ -40,20 +40,30 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="flex items-center">
-          <div className="w-3 h-12 bg-[var(--color-raimes-yellow)]"></div>
-          <div className="ml-6 w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center overflow-hidden">
-            <svg
-              className="w-10 h-10 text-gray-600"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                clipRule="evenodd"
-              />
-            </svg>
+        <div className="flex items-center gap-4">
+          <div className="w-1 h-12 bg-[var(--color-raimes-yellow)]"></div>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center overflow-hidden">
+              <svg
+                className="w-12 h-12 text-gray-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-[var(--color-raimes-yellow)] font-semibold">
+                Hello, Joko
+              </span>
+              <span className="text-white text-sm">
+                Reviewer
+              </span>
+            </div>
           </div>
         </div>
       </div>
