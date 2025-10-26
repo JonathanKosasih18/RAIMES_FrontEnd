@@ -64,7 +64,7 @@ function QuestionnairePage() {
                 value={answer}
                 onChange={(e) => setAnswer(e.target.value)}
                 placeholder="Type your essay answer here..."
-                className="w-full h-64 p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[var(--color-raimes-purple)] focus:border-transparent"
+                className="w-full h-64 p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-raimes-purple focus:border-transparent"
               />
             </div>
 

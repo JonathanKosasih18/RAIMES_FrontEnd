@@ -3,7 +3,7 @@ import logoFull from '../assets/logo-full.png';
 
 export default function Navbar() {
   return (
-    <nav className="bg-[var(--color-raimes-purple)] px-8 py-4">
+    <nav className="bg-raimes-purple px-8 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <img
@@ -16,32 +16,32 @@ export default function Navbar() {
         <div className="flex items-center gap-12">
           <Link
             to="/"
-            className="text-white font-semibold hover:text-[var(--color-raimes-yellow)] transition-colors"
+            className="text-white font-semibold hover:text-raimes-yellow transition-colors"
           >
             Dashboard
           </Link>
           <Link
             to="/assessment-results"
-            className="text-white font-semibold hover:text-[var(--color-raimes-yellow)] transition-colors"
+            className="text-white font-semibold hover:text-raimes-yellow transition-colors"
           >
             Assessment Results
           </Link>
           <Link
             to="/data-validation"
-            className="text-white font-semibold hover:text-[var(--color-raimes-yellow)] transition-colors"
+            className="text-white font-semibold hover:text-raimes-yellow transition-colors"
           >
             Data Validation
           </Link>
           <Link
             to="/final-report"
-            className="text-white font-semibold hover:text-[var(--color-raimes-yellow)] transition-colors"
+            className="text-white font-semibold hover:text-raimes-yellow transition-colors"
           >
             Final Report
           </Link>
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="w-1 h-12 bg-[var(--color-raimes-yellow)]"></div>
+          <div className="w-1 h-12 bg-raimes-yellow"></div>
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center overflow-hidden">
               <svg
@@ -57,7 +57,7 @@ export default function Navbar() {
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="text-[var(--color-raimes-yellow)] font-semibold">
+              <span className="text-raimes-yellow font-semibold">
                 Hello, Joko
               </span>
               <span className="text-white text-sm">

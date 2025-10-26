@@ -15,7 +15,7 @@ function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
       <div className="bg-white rounded-3xl shadow-lg w-full max-w-md overflow-hidden">
-        <div className="bg-[var(--color-raimes-purple)] px-8 py-6 rounded-br-[80px]">
+        <div className="bg-raimes-purple px-8 py-6 rounded-br-[80px]">
           <img
             src={logoFull}
             alt="Responsible AI Mining Evaluation System"
@@ -26,8 +26,8 @@ function LoginPage() {
         <div className="px-12 py-10">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold mb-2">
-              <span className="text-[var(--color-raimes-purple)]">Welcome to </span>
-              <span className="text-[var(--color-raimes-yellow)]">RAIMES!</span>
+              <span className="text-raimes-purple">Welcome to </span>
+              <span className="text-raimes-yellow">RAIMES!</span>
             </h1>
             <p className="text-gray-600">Login with your company's account</p>
           </div>
@@ -36,7 +36,7 @@ function LoginPage() {
             <div className="mb-6">
               <label
                 htmlFor="email"
-                className="block text-[var(--color-raimes-purple)] font-semibold mb-2"
+                className="block text-raimes-purple font-semibold mb-2"
               >
                 Email Address
               </label>
@@ -46,7 +46,7 @@ function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-raimes-purple)] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-raimes-purple focus:border-transparent"
                 required
               />
             </div>
@@ -54,7 +54,7 @@ function LoginPage() {
             <div className="mb-4">
               <label
                 htmlFor="password"
-                className="block text-[var(--color-raimes-purple)] font-semibold mb-2"
+                className="block text-raimes-purple font-semibold mb-2"
               >
                 Password
               </label>
@@ -65,7 +65,7 @@ function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-raimes-purple)] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-raimes-purple focus:border-transparent"
                   required
                 />
                 <button
@@ -105,13 +105,13 @@ function LoginPage() {
                   type="checkbox"
                   checked={rememberMe}
                   onChange={(e) => setRememberMe(e.target.checked)}
-                  className="w-4 h-4 text-[var(--color-raimes-purple)] border-gray-300 rounded focus:ring-[var(--color-raimes-purple)]"
+                  className="w-4 h-4 text-raimes-purple border-gray-300 rounded focus:ring-raimes-purple"
                 />
                 <span className="ml-2 text-gray-700">Remember me</span>
               </label>
               <a
                 href="#"
-                className="text-[var(--color-raimes-purple)] hover:text-[var(--color-raimes-yellow)] transition-colors"
+                className="text-raimes-purple hover:text-raimes-yellow transition-colors"
               >
                 Forgot Password?
               </a>
@@ -119,7 +119,7 @@ function LoginPage() {
 
             <button
               type="submit"
-              className="w-full bg-[var(--color-raimes-purple)] hover:bg-opacity-90 text-white font-semibold py-3 rounded-lg transition-colors"
+              className="w-full bg-raimes-purple hover:bg-opacity-90 text-white font-semibold py-3 rounded-lg transition-colors"
             >
               Login
             </button>
@@ -129,7 +129,7 @@ function LoginPage() {
             Don't have an account?{' '}
             <a
               href="#"
-              className="text-[var(--color-raimes-yellow)] font-semibold hover:underline"
+              className="text-raimes-yellow font-semibold hover:underline"
             >
               Sign Up
             </a>
