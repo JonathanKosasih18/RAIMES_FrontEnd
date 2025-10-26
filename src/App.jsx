@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
+import LoginPage from './pages/LoginPage';
 import QuestionnairePage from './pages/QuestionnairePage';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/questionnaire" replace />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/questionnaire" element={<QuestionnairePage />} />
         </Routes>
       </BrowserRouter>
