@@ -1,4 +1,6 @@
 import Navbar from '../components/Navbar';
+import warningIcon from '../assets/warning-icon.png';
+import bellIcon from '../assets/bell-icon.png';
 
 function Dashboard() {
   const companies = [
@@ -69,28 +71,11 @@ function Dashboard() {
 
           <div className="bg-white rounded-2xl p-8 shadow flex items-center justify-center gap-6">
             <div className="flex flex-col items-center">
-              <svg
-                className="w-24 h-24 mb-2"
-                viewBox="0 0 100 100"
-                fill="none"
-              >
-                <path
-                  d="M50 10 L90 90 L10 90 Z"
-                  stroke="#DC2626"
-                  strokeWidth="4"
-                  fill="none"
-                />
-                <text
-                  x="50"
-                  y="70"
-                  fontSize="32"
-                  fontWeight="bold"
-                  fill="#DC2626"
-                  textAnchor="middle"
-                >
-                  !
-                </text>
-              </svg>
+              <img
+                src={warningIcon}
+                alt="Warning Icon"
+                className="h-20"
+              />
             </div>
             <div className="text-center">
               <div className="text-6xl font-bold text-raimes-purple">2</div>
@@ -101,14 +86,11 @@ function Dashboard() {
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow flex items-center justify-center gap-6">
-            <svg
-              className="w-24 h-24"
-              viewBox="0 0 100 100"
-              fill="var(--color-raimes-yellow)"
-            >
-              <path d="M50 20 C50 20, 60 25, 60 35 L60 55 C60 60, 55 65, 50 65 C45 65, 40 60, 40 55 L40 35 C40 25, 50 20, 50 20 Z" />
-              <circle cx="50" cy="75" r="8" />
-            </svg>
+            <img
+              src={bellIcon}
+              alt="Bell Icon"
+              className="h-36"
+            />
             <div className="text-center">
               <div className="text-6xl font-bold text-raimes-purple">0</div>
               <div className="text-raimes-purple font-semibold">
