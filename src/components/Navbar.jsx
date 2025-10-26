@@ -15,7 +15,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-12">
           <Link
-            to="/"
+            to="/dashboard"
             className="text-white font-semibold hover:text-raimes-yellow transition-colors"
           >
             Dashboard
